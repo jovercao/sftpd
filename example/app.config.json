@@ -1,0 +1,41 @@
+{
+  "hostKeyFile": "${appRoot}/host_rsa",
+  "dataDir": "${appRoot}/datas",
+  "greeting": "Good luck!",
+  "banner": "Wellcome to SFTP test server.",
+  "ident": "sftp server by jover",
+  "debug": true,
+  "maxConnections": 1000,
+  "users": [
+    {
+      "username": "test1",
+      "password": "4Dp32BhmHO533HGr5Pp3wFuZT216jc5hGLjxGGV+BOw=",
+      "rootDir": "${appRoot}/datas/testUser",
+      "maxConnections": 1,
+      "permission": {
+        "MKDIR": true,
+        "RMDIR": true,
+        "READ": true,
+        "WRITE": true,
+        "REMOVE": true,
+        "CREATE": true
+      }
+    },
+    {
+      "username": "test2",
+      "password": "4Dp32BhmHO533HGr5Pp3wFuZT216jc5hGLjxGGV+BOw=",
+      "permission": {
+        "MKDIR": true,
+        "RMDIR": true,
+        "READ": true,
+        "WRITE": true,
+        "REMOVE": true,
+        "CREATE": true
+      }
+    }
+  ],
+  "port": "22",
+  "ipLockTimes": 5,
+  "ipLockSpan": 300,
+  "ipLockTTL": 30
+}
