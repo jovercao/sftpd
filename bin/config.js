@@ -1,7 +1,11 @@
-const path = require('path');
 const { load } = require('@jovercao/config-loader');
 
 const defaultConfig = {
+  hostKeyFile: '${appRoot}/host_rsa',
+  dataDir: '${appRoot}/datas',
+  greeting: 'Good luck!',
+  banner: 'Wellcome to sftpd server, pls configure it\'s yourself!',
+  ident: 'sftp server by jover',
   port: 22,
   users: [],
   // TTL时间内同ip连接锁定次数
@@ -30,8 +34,8 @@ const defaultConfig = {
         filename: '${appRoot}/log/error.log'
       },
       error: {
-        type: "logLevelFilter",
-        level: "error",
+        type: 'logLevelFilter',
+        level: 'error',
         appender: 'errorLog'
       }
     },
@@ -42,15 +46,13 @@ const defaultConfig = {
   }
 };
 
-
-
 const config = load({
   default: defaultConfig,
   appfile: 'app.config.json',
   userfile: '.sftpd.json',
   cwdfile: '.sftpd.json',
-  variants: {
-  }
+  initAppfile: true,
+  variants: {}
 });
 
 module.exports = config;

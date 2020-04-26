@@ -11,11 +11,17 @@
   },
   "homepage": "https://github.com/jovercao/sftpd",
   "github": "https://github.com/jovercao/sftpd.git",
-  "keywords": ["sftp","sftpd","sftp-server","server","ssh"],
+  "keywords": [
+    "sftp",
+    "sftpd",
+    "sftp-server",
+    "server",
+    "ssh"
+  ],
   "author": "JoverCao",
   "license": "MIT",
   "dependencies": {
-    "@jovercao/config-loader": "^0.1.1",
+    "@jovercao/config-loader": "^0.1.2",
     "commander": "^5.1.0",
     "fs-extra": "^9.0.0",
     "log4js": "^6.2.1",
