@@ -19,6 +19,10 @@ program.command('stop').description('停止服务').action(function() {
   console.log('尚未实现，请直接kill进程！');
 });
 
+program.command('reconfigure').description('重新加载配置文件').action(function (pwd) {
+  console.log('尚未实现，请暂时通过重启进程完成！');
+});
+
 program.command('pwd <pwd>').description('哈希密码并输出密码密文').action(function(pwd) {
   console.log(hash(pwd));
 });
