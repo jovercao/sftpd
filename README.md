@@ -91,3 +91,7 @@
 ```shell
 sftpd -h
 ```
+
+## 感谢
+
+sftpd 基于 [ssh2](https://github.com/mscdex/ssh2) 开发，感谢 mscdex 的无私奉献。

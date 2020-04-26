@@ -10,7 +10,7 @@
     "build:win64": "pkg . -t node10-windows-x64 --output dist/sftpd.exe"
   },
   "author": "JoverCao",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@jovercao/config-loader": "^0.1.1",
     "commander": "^5.1.0",
