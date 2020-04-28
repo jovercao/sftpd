@@ -35,7 +35,7 @@
     }
   ],
   "port": "22",
-  "ipLockTimes": 5,
+  "ipLockTimes": 0,
   "ipLockSpan": 300,
   "ipLockTTL": 30
 }
