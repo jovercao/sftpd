@@ -1,13 +1,13 @@
 {
   "name": "@jovercao/sftpd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A sftp server by nodejs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "example": "node example/index.js",
     "start": "node bin/cli.js",
-    "build:win64": "pkg . -t node10-windows-x64 --output dist/win64/sftpd.exe"
+    "build": "pwsh build/build.ps1"
   },
   "homepage": "https://github.com/jovercao/sftpd",
   "github": "https://github.com/jovercao/sftpd.git",
