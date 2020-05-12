@@ -2,6 +2,8 @@
 
 > Sftpd is the sftp server by nodejs, with permission virtual path.
 
+[中文文档](./README_cn.md)
+
 ## Configuration
 
 Cofigure file is 3 parts：
