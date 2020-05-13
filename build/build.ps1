@@ -4,7 +4,7 @@ if (!(test-Path $dir/../dist/cache/)) {
   mkdir $dir/../dist/cache/
 }
 
-$pkg = Get-Content $dir/../package.json -Encoding utf8 | ConvertTo-Json
+$pkg = Get-Content $dir/../package.json -Encoding utf8 | ConvertFrom-Json
 $platforms = @(
   New-Object PSObject @{
     name = 'win64';
@@ -13,6 +13,7 @@ $platforms = @(
     filename = 'sftp.exe'
   }
 )
+Write-Host $pkg
 
 $platforms | ForEach-Object {
   Write-Host $_;

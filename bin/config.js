@@ -14,6 +14,8 @@ const defaultConfig = {
   ipLockSpan: 5 * 60,
   // 合法连接数清零时长 30s
   ipLockTTL: 30,
+  // 是否启用TLL限制
+  ttlEnable: false,
   log: {
     //输出位置的基本信息设置
     appenders: {
