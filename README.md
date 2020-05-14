@@ -71,6 +71,8 @@ The configuration load order： App configuration -> User configuration -> Works
   ],
   // server listen port
   "port": "22",
+  // Is enable ttl，default value false
+  "ttlEnable": false,
   // lock
   "ipLockTimes": 5,
   // If connections count is over ipLockTimes in ipLockSpan by same ip, the ip will be locked.
