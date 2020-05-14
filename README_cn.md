@@ -72,6 +72,8 @@
   ],
   // 服务监听端口号，默认为22
   "port": "22",
+  // 是否启用TTL，默认为false
+  "ttlEnable": false,
   // TTL时间内同ip连接锁定次数，默认为5次
   "ipLockTimes": 5,
   // ip锁定时长(s)，默认锁定时间5分钟
