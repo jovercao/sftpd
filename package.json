@@ -1,6 +1,6 @@
 {
   "name": "@jovercao/sftpd",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A sftp server by nodejs.",
   "main": "index.js",
   "scripts": {

@@ -1,10 +1,14 @@
 const program = require('commander');
 const hash = require('../lib/passwordHasher');
+const hot = require('../lib/hot');
+
+let server;
 
 function start() {
   const { createServer } = require('../lib/server');
-  const config = require('./config');
-  createServer(config);
+  const { config } = require('../lib/config');
+  server = createServer(config);
+  hot.start(server);
 }
 
 program.action(function() {
@@ -16,11 +20,11 @@ program.command('start').description('启动服务').action(function() {
 });
 
 program.command('stop').description('停止服务').action(function() {
-  console.log('尚未实现，请直接kill进程！');
+  hot.commands.stop();
 });
 
 program.command('reconfigure').description('重新加载配置文件').action(function (pwd) {
-  console.log('尚未实现，请暂时通过重启进程完成！');
+  hot.commands.reconfigure();
 });
 
 program.command('pwd <pwd>').description('哈希密码并输出密码密文').action(function(pwd) {

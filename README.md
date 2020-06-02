@@ -100,6 +100,13 @@ Pls look for help：
 sftpd -h
 ```
 
+## Version
+
+### 1.0.3
+
+- add `reconfigure` command, support hot reload config
+- add `stop` command, stop service
+
 ## Thanks
 
 sftpd is base by [ssh2](https://github.com/mscdex/ssh2), thanks mscdex。
