@@ -94,6 +94,13 @@
 sftpd -h
 ```
 
+## 版本日志
+
+### 1.0.3
+
+- 添加`reconfigure`命令，实现热更新配置
+- 添加`stop`命令，关闭服务
+
 ## 感谢
 
 sftpd 基于 [ssh2](https://github.com/mscdex/ssh2) 开发，感谢 mscdex 的无私奉献。
